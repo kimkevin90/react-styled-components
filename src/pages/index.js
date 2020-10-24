@@ -3,7 +3,13 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
-
+import Services from "../components/Services";
+import {
+  homeObjOne,
+  homeObjThree,
+  homeObjTwo,
+} from "../components/InfoSection/Data";
+//homeObj를 프롭스로 전달하고 이때 스타일 컴포넌트에도 전달한다?
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,7 +22,10 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <InfoSection />
+      <InfoSection {...homeObjOne} />
+      <InfoSection {...homeObjTwo} />
+      <Services />
+      <InfoSection {...homeObjThree} />
     </>
   );
 };

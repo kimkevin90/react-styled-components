@@ -1,1 +1,50 @@
-//2:04
+export const homeObjOne = {
+  id: "about",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "가평 양평 여행",
+  headline: "기차 스쿠터를 타고 떠나는 서울권 여행 함께해요",
+  description: "지금 등록하시면 10%할인된 가격에 숙박, 여행권 선물로 드립니다.",
+  buttonLabel: "등록하기",
+  imgStart: false,
+  img: require("../../images/svg-1.svg"),
+  alt: "Car",
+  dark: true,
+  primary: true,
+  darkText: false,
+};
+
+export const homeObjTwo = {
+  id: "discover",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "강원도 여행",
+  headline: "기차 스쿠터를 타고 떠나는 서울권 여행 함께해요",
+  description: "지금 등록하시면 10%할인된 가격에 숙박, 여행권 선물로 드립니다.",
+  buttonLabel: "더 알아보기",
+  imgStart: true,
+  img: require("../../images/svg-2.svg"),
+  alt: "forest",
+  dark: false,
+  primary: false,
+  darkText: true,
+};
+
+export const homeObjThree = {
+  id: "signup",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: "가평 양평 여행",
+  headline: "기차 스쿠터를 타고 떠나는 서울권 여행 함께해요",
+  description: "지금 등록하시면 10%할인된 가격에 숙박, 여행권 선물로 드립니다.",
+  buttonLabel: "시작하기",
+  imgStart: false,
+  img: require("../../images/svg-3.svg"),
+  alt: "paper",
+  dark: false,
+  primary: false,
+  darkText: true,
+};
