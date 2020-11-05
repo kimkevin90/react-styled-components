@@ -3,9 +3,9 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: #000;
+  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
   height: 80px;
-  // margin-top: -80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@ export const NavLogo = styled(LinkR)`
 `;
 
 export const MobileIcon = styled.div`
-  diplay: none;
+  display: none;
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -80,6 +80,7 @@ export const NavLinks = styled(LinkScroll)`
   height: 100%;
   cursor: pointer;
   font-weight: bold;
+
   &.active {
     border-bottom: 3px solid #01bf71;
   }
